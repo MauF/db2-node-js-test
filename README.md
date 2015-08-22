@@ -17,7 +17,7 @@ test connection via nodejs towards db2 instance inside a docker container
   * [ { '1': 1 } ] 
   * done
 
-## Source:
+## Sources:
 * https://github.com/ibmdb/node-ibm_db
 * https://hub.docker.com/r/angoca/db2-instance/
 
