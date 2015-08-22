@@ -14,7 +14,7 @@ git clone https://github.com/MauF/db2-node-js-test.git
 ```
 * run the db2 docker image
 ```
-  * docker run -i -t --privileged=true -p 50000:50000 angoca/db2-instance
+docker run -i -t --privileged=true -p 50000:50000 angoca/db2-instance
 ```
   * (inside the container, run the command createInstance)
 ```  
