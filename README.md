@@ -1,6 +1,11 @@
 # db2-node-js-test
 test connection via nodejs towards db2 instance inside a docker container
 
+#Prerequisites
+
+* node and npm : https://docs.npmjs.com/getting-started/installing-node
+* docker: https://docs.docker.com/installation/
+
 #Quick start
 
 1. clone the project
