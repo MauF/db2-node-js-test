@@ -28,11 +28,11 @@ db2 CREATE DATABASE TEST;
 ```
 cd db2-node-js-test
 npm install
-node index.js
+node index.js -dbhost=<db2-server-ip> --dbname=<db2-name> --db2user=<db2user> --password=<password> --dbport=<db2-server-port> --query='<query-to-execute>'
 ```
 * expected output:
 ```
-[ { '1': 1 } ] 
+[ {<query-result>} ] 
 done
 ```
 
