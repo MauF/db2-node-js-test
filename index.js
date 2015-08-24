@@ -8,13 +8,13 @@ var password = argv.password;
 var dbport = argv.dbport;
 var query = argv.query;
 
-var usage = "USAGE: \n--dbhost=<db2-server-ip> --dbname=<db2-name> --db2user=<db2user> --password=<password> --dbport=<db2-server-port> --query=<query-to-execute>"
+var usage = "USAGE: \n--dbhost=<db2-server-ip> --dbname=<db2-name> --db2user=<db2user> --password=<password> --dbport=<db2-server-port> --query='<query-to-execute>'"
 
 if (dbhost && dbname && db2user && password && dbport && query) {
     ibmdb.open("DRIVER={DB2};DATABASE=" + dbname + ";HOSTNAME=" + dbhost + ";UID=" + db2user + ";PWD=" + password + ";PORT=" + dbport + ";PROTOCOL=TCPIP", function(err, conn) {
         if (err) return console.log(err);
 
-        conn.query('SELECT * FROM MDLR_CORE_CLUSTERS', function(err, data) {
+        conn.query(query + ';', function(err, data) {
             if (err) console.log(err);
             else console.log(data);
 
